@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet" />
+    <script type="module">
+        import setUpWindow from './main.js';
+        window.addEventListener('load', setUpWindow);
+    </script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="calculator">
+        <div id="calc-display"></div>
+        <div id="keyboard">
+            <div class="calc-row">
+                <div class="calc-button calc-button-strong">(</div>
+                <div class="calc-button calc-button-strong">)</div>
+                <div class="calc-button calc-button-strong">%</div>
+                <div class="calc-button calc-button-strong">AC</div>
+            </div>
+            <div class="calc-row">
+                <div class="calc-button">7</div>
+                <div class="calc-button">8</div>
+                <div class="calc-button">9</div>
+                <div class="calc-button calc-button-strong">/</div>
+            </div>
+            <div class="calc-row">
+                <div class="calc-button">4</div>
+                <div class="calc-button">5</div>
+                <div class="calc-button">6</div>
+                <div class="calc-button calc-button-strong">x</div>
+            </div>
+            <div class="calc-row">
+                <div class="calc-button">1</div>
+                <div class="calc-button">2</div>
+                <div class="calc-button">3</div>
+                <div class="calc-button calc-button-strong">-</div>
+            </div>
+            <div class="calc-row">
+                <div class="calc-button">0</div>
+                <div class="calc-button">.</div>
+                <div class="calc-button calc-button-equals">=</div>
+                <div class="calc-button calc-button-strong">+</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
