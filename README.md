@@ -10,8 +10,8 @@ EQN is a simple calculator written using different frameworks:
 
 ROADMAD:
 
-[ ] Have parity and clean up code
-[ ] Add linter and READMEs
-[ ] Add an actual calculator
-[ ] Extend the calculator
-[ ] Writeup a blog post with comparision
+- [ ] Have parity and clean up code
+- [ ] Add linter and READMEs
+- [ ] Add an actual calculator
+- [ ] Extend the calculator
+- [ ] Writeup a blog post with comparision
