@@ -25813,6 +25813,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
   var import_react2 = __toESM(require_react());
   var EqnButton = (props) => {
     return /* @__PURE__ */ import_react2.default.createElement(Button, {
+      $type: props.type,
       onClick: props.onClick,
       className: "eqn-button"
     }, props.children);
@@ -25822,8 +25823,26 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
     width: 50px;
     height: 50px;
     border-radius: 3px;
-    background-color: #04d88a;
-    color: #007C63;
+    background-color:  ${({ $type }) => {
+    if ($type === "normal") {
+      return "#04d88a";
+    } else if ($type === "strong") {
+      return "#03a578";
+    } else {
+      return "#f1b707";
+    }
+    ;
+  }};
+    color: ${({ $type }) => {
+    if ($type === "normal") {
+      return "#007C63";
+    } else if ($type === "strong") {
+      return "#b5ffe4";
+    } else {
+      return "#007C63";
+    }
+    ;
+  }};
     justify-content: center;
     align-items: center;
 `;

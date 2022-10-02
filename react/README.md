@@ -1,4 +1,4 @@
-Simple React App with esbuild && typescript
+# Simple React App with esbuild && typescript
 
 > npm -y init
 
