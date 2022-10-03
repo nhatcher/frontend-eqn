@@ -12,31 +12,31 @@ class EqnCalculator extends HTMLElement {
         wrapper.innerHTML = `
             <eqn-display></eqn-display>
             <div>
-                <div class="calc-row">
+                <div class="eqn-row">
                     <eqn-button data-type="strong">(</eqn-button>
                     <eqn-button data-type="strong">)</eqn-button>
                     <eqn-button data-type="strong">%</eqn-button>
                     <eqn-button data-type="strong">AC</eqn-button>
                 </div>
-                <div class="calc-row">
+                <div class="eqn-row">
                     <eqn-button data-type="normal">7</eqn-button>
                     <eqn-button data-type="normal">8</eqn-button>
                     <eqn-button data-type="normal">9</eqn-button>
                     <eqn-button data-type="strong">/</eqn-button>
                 </div>
-                <div class="calc-row">
+                <div class="eqn-row">
                     <eqn-button data-type="normal">4</eqn-button>
                     <eqn-button data-type="normal">5</eqn-button>
                     <eqn-button data-type="normal">6</eqn-button>
                     <eqn-button data-type="strong">x</eqn-button>
                 </div>
-                <div class="calc-row">
+                <div class="eqn-row">
                     <eqn-button data-type="normal">1</eqn-button>
                     <eqn-button data-type="normal">2</eqn-button>
                     <eqn-button data-type="normal">3</eqn-button>
                     <eqn-button data-type="strong">-</eqn-button>
                 </div>
-                <div class="calc-row">
+                <div class="eqn-row">
                     <eqn-button data-type="normal">0</eqn-button>
                     <eqn-button data-type="normal">.</eqn-button>
                     <eqn-button data-type="equals">=</eqn-button>
@@ -49,17 +49,15 @@ class EqnCalculator extends HTMLElement {
         wrapper.addEventListener('click', (event) => {
             console.log(event, event.target);
             if (event.target.tagName.toLowerCase() === 'eqn-button') {
-                console.log('Hola');
                 const wholeText = eqnDisplay.getAttribute('data-text');
                 const text = calculate(event.target.textContent, wholeText);
-                console.log(event.target.textContent, wholeText);
                 eqnDisplay.setAttribute('data-text', text);
             };
         });
 
         const style = document.createElement('style');
         style.textContent = `
-            .calc-row {
+            .eqn-row {
                 display: flex;
                 flex-direction: row;
             }
@@ -68,7 +66,7 @@ class EqnCalculator extends HTMLElement {
                 margin-left: 10px;
             }
             
-            .calc-row + .calc-row {
+            .eqn-row + .eqn-row {
                 margin-top: 10px;
             }
         `;
