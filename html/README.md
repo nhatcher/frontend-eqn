@@ -1,4 +1,12 @@
-# Eqn Claculator in simple HTML, CSS and JavaScript
+# Eqn Calculator in simple HTML, CSS and JavaScript
+
+
+## Usage
+
+Just use any web-server in the folder, for instance:
+
+> python -m http.server 
+
 
 
 ## Pros and Cons
@@ -8,7 +16,7 @@ Pros:
 * Extremely light (as light as it gets)
 * Only need to know HTML, CSS and a bit of JavaScript
 * No dependencies
-* Will stand the pass of time. Small variations of this code would have worked 20 years ago and will work in the foreseable future
+* Will stand the pass of time. Small variations of this code would have worked 20 years ago and will work in the foreseeable future
 * Easy to hack, change update
 
 Cons:
