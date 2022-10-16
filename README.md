@@ -2,7 +2,7 @@
 
 EQN is a simple calculator written using different frameworks:
 
-* Vanila HTML+CSS+JavaScript
+* Vanilla HTML+CSS+JavaScript
 * HTML Web Components
 * React
 * Svelte
@@ -13,7 +13,7 @@ Not interested (for now):
 * Vue
 * Angular
 * Elm
-* CojureScript
+* ClojureScript
 
 ROADMAD:
 
@@ -21,10 +21,10 @@ ROADMAD:
 - [ ] Add linter and READMEs
 - [ ] Add an actual calculator
 - [ ] Extend the calculator
-- [ ] Writeup a blog post with comparision
+- [ ] Writeup a blog post with comparison
 
 
-## The front end framework Cambrian explossion
+## The front end framework Cambrian explosion
 
 ## The node environment: npm (yarn and pnpm), npx
 
